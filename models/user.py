@@ -17,3 +17,4 @@ def update_user(name: str, new_email: str):
 def delete_user(name: str):
     result = users.delete_one({"name": name})
     return result.deleted_count
+
