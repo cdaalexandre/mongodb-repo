@@ -16,4 +16,4 @@ if __name__ == "__main__":
 
     # DELETE
     delete_count = delete_user("Alexandre")
-    print(f"Usuários deletados: {delete_count}")
+    print(f"Usuários deletados: {delete_count}") 
