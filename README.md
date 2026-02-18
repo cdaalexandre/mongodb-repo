@@ -1,37 +1,39 @@
-﻿## 🔄 Como iniciar o projeto todo dia
+# MongoDB Study Project
 
-```powershell
-# 1. Abrir o projeto no VS Code
-cd C:\repo\mongodb-repo
+A hands-on Python project for learning MongoDB — covering database operations, data modeling, and the PyMongo driver.
 
-# 2. Ativar ambiente virtual
-# Windows PowerShell
-.\.venv\Scripts\activate
-# Linux/Mac
-# source .venv/bin/activate
+## Project Structure
 
-# 3. Verificar interpretador no VS Code
-# (Ctrl+Shift+P → Python: Select Interpreter → .venv\Scripts\python.exe)
+```
+├── main.py          # Application entry point
+├── db/              # Database connection and configuration
+├── models/          # Data models and schemas
+├── requirements.txt # Dependencies
+└── README.md
+```
 
-# 4. Iniciar o MongoDB (se não estiver rodando)
-# Windows
-net start MongoDB
-# Linux/Mac
-# sudo systemctl start mongod
+## How to Run
 
-# 5. Conferir conexão com o banco
-mongosh
-show dbs
-exit
+```bash
+# 1. Start MongoDB
+sudo systemctl start mongod
 
-# 6. Instalar dependências (se necessário)
+# 2. Set up environment
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 
-# 7. Rodar o projeto
+# 3. Run
 python main.py
+```
 
-# 8. Versionar com Git
-git pull origin main   # antes de começar
-git add .
-git commit -m "mensagem clara"
-git push origin main
+## Topics Covered
+
+- MongoDB CRUD operations with PyMongo
+- Document-based data modeling
+- Database connection management
+- Schema design for NoSQL
+
+## Author
+
+**Alexandre Dias-Alves** — Software Engineering student exploring NoSQL databases and document-based architectures.
